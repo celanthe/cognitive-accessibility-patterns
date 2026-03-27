@@ -26,6 +26,7 @@ This library fills the gap between "cognitive accessibility matters" and "here i
 | [Ritual-Based Transitions](patterns/ritual-based-transitions.md) | Emotional processing containers | Foghorn |
 | [Progressive Trust](patterns/progressive-trust.md) | Cognitive load management | Lumentide |
 | [Metacognition Through Use](patterns/metacognition-through-use.md) | Self-pattern recognition | Lumentide |
+| [Voice Identity Differentiation](patterns/voice-identity-differentiation.md) | Auditory selective attention | Clarion |
 
 ## How Patterns Are Structured
 
@@ -39,13 +40,13 @@ Each pattern follows a [consistent schema](schema/pattern-template.md):
 
 ## Framework
 
-These patterns are part of [Human-Rhythm Design](https://github.com/celanthe/human-rhythm-design), a framework for building software around cognitive, temporal, and emotional patterns. The framework has four dimensions (Memory, Attention, Time, Transitions) and each pattern maps to one or more of them.
+These patterns are part of [Human-Rhythm Design](https://github.com/celanthe/human-rhythm-design), a framework for building software around cognitive, temporal, and emotional patterns. The framework has five dimensions (Memory, Attention, Time, Transitions, Voice) and each pattern maps to one or more of them.
 
 ## Source Projects
 
 - **[EverbloomReader](https://everbloomreader.com)** -- Reading app for dyslexic readers. Word-level TTS synchronization, OpenDyslexic font, position memory.
 - **[Lumentide](https://lumentide.vercel.app)** -- Task management for executive dysfunction. Energy reading, social battery tracking, metacognitive pattern analysis.
-- **[Foghorn](https://github.com/celanthe/foghorn)** -- Weather-based grief rituals for ambiguous loss.
+- **[Foghorn](https://foghorn-lime.vercel.app/)** -- Weather-based grief rituals for ambiguous loss.
 - **[Clarion](https://github.com/celanthe/clarion)** -- Self-hosted TTS proxy giving AI agents distinct voices.
 
 ## Contributing
