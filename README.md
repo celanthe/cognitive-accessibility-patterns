@@ -1,22 +1,34 @@
-# Cognitive Accessibility Pattern Library
+# Human-Rhythm Design
+
+**Cognitive + Temporal + Emotional**
+
+A design framework for software that respects how human brains actually work -- and a pattern library of concrete implementations extracted from shipping software.
 
 WCAG tells you what to test. This tells you what to build.
 
 ---
 
-## What This Is
+## The Framework
+
+Human-Rhythm Design starts from the assumption that people forget, get interrupted, shut down, and grieve -- and that software should hold that honestly. The framework has five dimensions: **Memory**, **Attention**, **Time**, **Transitions**, and **Emotion**. Each addresses a different aspect of how people experience cognition and feeling.
+
+Read the full framework definition, dimensions, principles, and project mapping in [framework/README.md](framework/README.md).
+
+---
+
+## The Pattern Library
 
 Design patterns for cognitive accessibility, extracted from shipping software. Each pattern documents a specific interaction design that supports users with ADHD, dyslexia, executive dysfunction, grief, or other cognitive and emotional states that mainstream UX does not design for.
 
 Every pattern in this library is grounded in a real product. No hypotheticals. No "consider doing this." These patterns exist in software that people use.
 
-## Why This Exists
+### Why This Exists
 
 The W3C Cognitive Accessibility (COGA) task force has identified significant gaps in accessibility guidance for cognitive and emotional states. WCAG provides testable success criteria, but testability requires that someone first figures out what to build. That work has largely not happened.
 
 This library fills the gap between "cognitive accessibility matters" and "here is a concrete pattern you can implement."
 
-## Patterns
+### Patterns
 
 | Pattern | Mechanism | Source Projects |
 |---------|-----------|----------------|
@@ -28,7 +40,7 @@ This library fills the gap between "cognitive accessibility matters" and "here i
 | [Metacognition Through Use](patterns/metacognition-through-use.md) | Self-pattern recognition | Lumentide |
 | [Voice Identity Differentiation](patterns/voice-identity-differentiation.md) | Auditory selective attention | Clarion |
 
-## How Patterns Are Structured
+### How Patterns Are Structured
 
 Each pattern follows a [consistent schema](schema/pattern-template.md):
 
@@ -38,9 +50,7 @@ Each pattern follows a [consistent schema](schema/pattern-template.md):
 - **COGA Mapping** -- how it relates to W3C cognitive accessibility criteria
 - **Not This** -- what the pattern is not (prevents scope creep)
 
-## Framework
-
-These patterns are part of [Human-Rhythm Design](https://github.com/celanthe/human-rhythm-design), a framework for building software around cognitive, temporal, and emotional patterns. The framework has five dimensions (Memory, Attention, Time, Transitions, Voice) and each pattern maps to one or more of them.
+---
 
 ## Source Projects
 
