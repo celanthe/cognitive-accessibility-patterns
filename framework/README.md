@@ -2,53 +2,45 @@
 
 **Cognitive + Temporal + Emotional**
 
-A design framework for software that respects how human brains actually work.
+Most software for neurodivergent people is neurotypical software with accessibility bolted on. The Human-Rhythm Design Framework builds from the other direction, starting with how AuDHD, dyspraxic, and dyscalculic brains actually experience time, memory, attention, transitions, and grief.
 
-Most software is designed for an ideal user who focuses perfectly, remembers everything, processes linearly, and never grieves. Human-Rhythm Design starts from the opposite assumption. People forget. People get interrupted. People shut down. People lose things and people they love. Software should hold that honestly.
+Each project is both a real tool and a research artifact. Together they map a design space that mainstream UX does not have vocabulary for: task management that celebrates starting over finishing, reading tools that sync to how dyslexic brains process speech, grief software that treats shutdown as a legitimate user state rather than an error to recover from.
+
+The framework has five dimensions. Each project lives in one of them.
 
 ---
 
 ## Dimensions
 
-The framework has four dimensions. Each addresses a different aspect of how people experience time, cognition, and emotion.
-
 ### Memory
 
-How the brain stores, retrieves, and re-experiences information over time. Some people cannot hold narrative continuity. Some people lose memories progressively. Some people process familiar information differently than new information. Software that assumes perfect recall excludes all of them.
+Working memory is limited, fragile, and the first thing to go under load. Context doesn't stick. It decays. Software should hold position, state, and continuity so the user never has to reconstruct where they were.
 
-**Projects:**
-- **[Everbloom](https://github.com/celanthe/everbloom)** — Reading and context support for people with dyslexia, ADHD, and visual processing differences
-- **[Infinite Storyteller](https://github.com/celanthe/infinite-storyteller)** — A story that never ends, for children who live in the permanent present *(spans Memory and Transitions)*
+**Project:** [EverbloomReader](https://github.com/celanthe/everbloom) -- Reading app for dyslexic readers with word-level TTS sync
 
 ### Attention
 
-How the brain selects, sustains, and shifts focus. Attention is not a binary. It fluctuates, fragments, and fatigues. Software that demands sustained focus without accommodation creates friction for millions of people.
+Focus isn't a toggle; it fluctuates, fragments, and sometimes just leaves. Expecting sustained concentration is a design choice, not a given. Software should offer alternative modalities and recover gracefully when attention drifts. Because it will.
 
-**Projects:**
-- **Pattern Library** — Cognitive UX patterns for attention-aware interfaces *(planned)*
+**Project:** [Pattern Library](https://github.com/celanthe/cognitive-accessibility-patterns) -- Design patterns for cognitive accessibility, COGA-mapped
 
 ### Time
 
-How the brain experiences duration, rhythm, and sequence. Circadian rhythms affect cognition. Seasons affect mood. Interruptions destroy context. Software that ignores temporal experience ignores the body.
+Capacity shifts by the hour, the season, the weight of everything else on the stack. The brain doesn't experience duration on a clock. It runs on energy, rhythm, and social load. Software should read that state and adapt instead of pretending every moment is the same.
 
-**Projects:**
-- **[Lumentide](https://github.com/celanthe/lumentide)** — Circadian and seasonal UI for neurodivergent flourishing
-- **Interruptible Workflows** — Autosave and resume patterns that respect interruption as normal *(planned)*
+**Project:** [Lumentide](https://github.com/celanthe/tidewater-cove) -- Task management for executive dysfunction with energy reading and metacognition
 
 ### Transitions
 
-How the brain processes grief, loss, shutdown, and overwhelm. These are real human states that most software pretends do not exist. Endings happen. Roles change. People die. Software that only models forward progress has no language for any of it.
+Grief, shutdown, overwhelm. These aren't edge cases. They're real user states that most software either ignores or tries to rush past. Software should hold space for them without demanding resolution.
 
-**Projects:**
-- **Foghorn** — Grief rituals and support *(planned)*
-- **[Infinite Storyteller](https://github.com/celanthe/infinite-storyteller)** — *(spans Memory and Transitions)*
+**Project:** [Foghorn](https://github.com/celanthe/foghorn) -- Weather-based grief rituals for ambiguous loss
 
-### Emotion
+### Voice
 
-How the brain processes feeling alongside cognition. Emotion is not separate from thought. It shapes attention, memory, and decision-making. Software that treats users as rational agents ignores most of what the brain actually does.
+When every agent sounds identical, the brain stops trying to tell them apart. Speaker differentiation is a trust mechanism. We assign credibility partly by recognizing who's talking. Software should give each voice a distinct identity so the user can track source without reading labels.
 
-**Projects:**
-- Grief rituals and support patterns *(integrated across dimensions)*
+**Project:** [Clarion](https://github.com/celanthe/clarion) -- Self-hosted TTS proxy giving AI agents distinct voices
 
 ---
 
@@ -63,28 +55,14 @@ How the brain processes feeling alongside cognition. Emotion is not separate fro
 
 ---
 
-## Cross-dimensional projects
-
-Some projects span multiple dimensions. Infinite Storyteller is the first. It lives at the intersection of Memory (episodic memory difference as a design constraint) and Transitions (the permanent present as a valid state of being). The design is richer for holding both.
-
----
-
 ## Methodology
 
 Projects in the framework use [Investiture](https://github.com/celanthe/investiture) for project doctrine and structured research. Each project maintains:
 
-- **VECTOR.md** — Project identity, audience, constraints, design principles
-- **CLAUDE.md** — Contributor onboarding
-- **ARCHITECTURE.md** — Technical specification
-- **/vector/** — Research artifacts (interviews, personas, assumptions, decisions)
-
----
-
-## Status
-
-Early. The framework is in active use across multiple projects. The theory is grounded in cognitive science, accessibility research, and lived experience. The projects are in various stages of development.
-
-This is not an academic exercise. These are real tools for real people.
+- **VECTOR.md** -- Project identity, audience, constraints, design principles
+- **CLAUDE.md** -- Contributor onboarding
+- **ARCHITECTURE.md** -- Technical specification
+- **/vector/** -- Research artifacts (interviews, personas, assumptions, decisions)
 
 ---
 

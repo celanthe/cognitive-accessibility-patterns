@@ -2,31 +2,35 @@
 
 **Cognitive + Temporal + Emotional**
 
-A design framework for software that respects how human brains actually work -- and a pattern library of concrete implementations extracted from shipping software.
+Most software for neurodivergent people is neurotypical software with accessibility bolted on. The Human-Rhythm Design Framework builds from the other direction, starting with how AuDHD, dyspraxic, and dyscalculic brains actually experience time, memory, attention, transitions, and grief.
 
-WCAG tells you what to test. This tells you what to build.
+Each project is both a real tool and a research artifact. Together they map a design space that mainstream UX does not have vocabulary for.
 
 ---
 
 ## The Framework
 
-Human-Rhythm Design starts from the assumption that people forget, get interrupted, shut down, and grieve -- and that software should hold that honestly. The framework has five dimensions: **Memory**, **Attention**, **Time**, **Transitions**, and **Emotion**. Each addresses a different aspect of how people experience cognition and feeling.
+Five dimensions. Each project lives in one of them.
 
-Read the full framework definition, dimensions, principles, and project mapping in [framework/README.md](framework/README.md).
+| Dimension | What it means | Project |
+|-----------|--------------|---------|
+| **Memory** | Working memory is fragile and the first thing to go under load. Software should hold position, state, and continuity. | [EverbloomReader](https://github.com/celanthe/everbloom) |
+| **Attention** | Focus fluctuates, fragments, and sometimes just leaves. Software should offer alternative modalities and recover gracefully. | Pattern Library (this repo) |
+| **Time** | Capacity shifts by the hour, the season, the weight of everything else. Software should read that state and adapt. | [Lumentide](https://github.com/celanthe/tidewater-cove) |
+| **Transitions** | Grief, shutdown, overwhelm. Real user states that most software ignores. Software should hold space without demanding resolution. | [Foghorn](https://github.com/celanthe/foghorn) |
+| **Voice** | When every agent sounds identical, the brain stops differentiating. Software should give each voice a distinct identity. | [Clarion](https://github.com/celanthe/clarion) |
+
+Read the full framework definition, dimensions, and principles in [framework/README.md](framework/README.md).
 
 ---
 
 ## The Pattern Library
 
-Design patterns for cognitive accessibility, extracted from shipping software. Each pattern documents a specific interaction design that supports users with ADHD, dyslexia, executive dysfunction, grief, or other cognitive and emotional states that mainstream UX does not design for.
+Design patterns for cognitive accessibility, extracted from shipping software. Every pattern documents a specific interaction design that supports users with ADHD, dyslexia, executive dysfunction, grief, or other cognitive and emotional states that mainstream UX does not design for.
+
+WCAG tells you what to test. This tells you what to build.
 
 Every pattern in this library is grounded in a real product. No hypotheticals. No "consider doing this." These patterns exist in software that people use.
-
-### Why This Exists
-
-The W3C Cognitive Accessibility (COGA) task force has identified significant gaps in accessibility guidance for cognitive and emotional states. WCAG provides testable success criteria, but testability requires that someone first figures out what to build. That work has largely not happened.
-
-This library fills the gap between "cognitive accessibility matters" and "here is a concrete pattern you can implement."
 
 ### Patterns
 
@@ -50,14 +54,13 @@ Each pattern follows a [consistent schema](schema/pattern-template.md):
 - **COGA Mapping** -- how it relates to W3C cognitive accessibility criteria
 - **Not This** -- what the pattern is not (prevents scope creep)
 
+### Why This Exists
+
+The W3C Cognitive Accessibility (COGA) task force has identified significant gaps in accessibility guidance for cognitive and emotional states. WCAG provides testable success criteria, but testability requires that someone first figures out what to build. That work has largely not happened.
+
+This library fills the gap between "cognitive accessibility matters" and "here is a concrete pattern you can implement."
+
 ---
-
-## Source Projects
-
-- **[EverbloomReader](https://everbloomreader.com)** -- Reading app for dyslexic readers. Word-level TTS synchronization, OpenDyslexic font, position memory.
-- **[Lumentide](https://lumentide.vercel.app)** -- Task management for executive dysfunction. Energy reading, social battery tracking, metacognitive pattern analysis.
-- **[Foghorn](https://foghorn-lime.vercel.app/)** -- Weather-based grief rituals for ambiguous loss.
-- **[Clarion](https://github.com/celanthe/clarion)** -- Self-hosted TTS proxy giving AI agents distinct voices.
 
 ## Contributing
 
